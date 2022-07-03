@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice(jewerly)</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="hero-img"></div>
+
+    <div class="container">
+      <header>
+        <a href="#" class="logo"><span>Hello</span><span>jewelry</span></a>
+
+        <nav>
+          <img class="close" src="images/close.svg" alt="close">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">lookbook</a></li>
+          </ul>
+        </nav>
+        <svg
+          class="menu"
+          viewBox="0 0 48 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z"
+            fill="black"
+          />
+        </svg>
+      </header>
+
+      <section class="hero">
+        <h1><span> MEET <br /> THE COLLECTIBLES </span></h1>
+        <button> EXPLORE THE COLLECTION </button>
+      </section>
+
+
+      <section class="more-info">
+        <div class="feature necklace">
+          <img src="images/necklace-1.jpg" alt="necklace">
+          <div class="content">
+            <a href="#" class="title">NECKLECES</a>
+            <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis repudiandae dicta sapiente laboriosam.</p>
+          </div>
+        </div>
+        <div class="feature ring">
+          <img src="images/ring.jpg" alt="ring">
+          <div class="content">
+            <a href="#" class="title">RINGS</a>
+            <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis repudiandae dicta sapiente laboriosam.</p>
+          </div>
+        </div>
+        <div class="feature bracelet">
+          <img src="images/bracelet.jpg" alt="bracelet">
+          <div class="content">
+            <a href="#" class="title">BRACELETS</a>
+            <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis repudiandae dicta sapiente laboriosam.</p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="sns">
+          <a href="#"><img src="images/instagram.svg"></a>
+          <a href="#"><img src="images/twitter.svg"></a>
+          <a href="#"><img src="images/facebook.svg"></a>
+        </div>
+        <p><a href="#">HELLOJEWELRY@hellojewelry.com</a> | +82 123-4567</p>
+      </footer>
+    </div>
+    <script>
+      const menu = document.querySelector('.menu');
+      const close = document.querySelector('.close');
+      const nav = document.querySelector('nav');
+
+      menu.addEventListener('click', () => {
+        nav.classList.add('open-nav');
+      })
+
+      close.addEventListener('click', () => {
+        nav.classList.remove('open-nav');
+      })      
+    </script>
+  </body>
+</html>
